@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GestionDeCourrier.Core.Entities
 {
-    public class Expediteur : Personne
+    public class Utilisateur : Personne
     {
+        public string Identifiant { get; set; }
+        public string MotDePasse { get; set; }
     }
 }

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace GestionDeCourrier.Core.Entities
 {
-    [NotMapped]
-    public class Personne
+    public class Personne : EntityBase
     {
         public string Nom { get; set; }
     }

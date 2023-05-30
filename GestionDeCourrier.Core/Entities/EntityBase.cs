@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace GestionDeCourrier.Core.Entities
 {
-    [NotMapped]
     public abstract class EntityBase
     {
         [Key]

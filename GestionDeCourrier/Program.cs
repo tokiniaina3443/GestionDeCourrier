@@ -1,6 +1,13 @@
+using GestionDeCourrier.DAL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Database=GestionDeCourrier;User ID=sa;Password=root;TrustServerCertificate=True;", b => b.MigrationsAssembly("GestionDeCourrier.DAL"));
+});
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
