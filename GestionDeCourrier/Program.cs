@@ -1,4 +1,6 @@
+using GestionDeCourrier.Core.Entities;
 using GestionDeCourrier.DAL;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Database=GestionDeCourrier;User ID=sa;Password=root;TrustServerCertificate=True;", b => b.MigrationsAssembly("GestionDeCourrier.DAL"));
+});
+builder.Services.AddIdentity<Utilisateur, Role>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    options.LoginPath = "/Login";
+    options.AccessDeniedPath = "/AccessDenied";
+    options.SlidingExpiration = true;
 });
 builder.Services.AddRazorPages();
 

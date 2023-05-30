@@ -13,6 +13,7 @@ namespace GestionDeCourrier.Core.Entities
         private string _status;
         [ForeignKey("Courrier")]
         public int CourrierId { get; set; }
+        public string ActionneurId { get; set; }
         public string Status
         {
             get { return _status; }
@@ -29,5 +30,6 @@ namespace GestionDeCourrier.Core.Entities
         public DateTime Period { get; set; }
 
         public virtual Courrier Courrier { get; set; }
+        public virtual Utilisateur Actionneur { get; set; }
     }
 }

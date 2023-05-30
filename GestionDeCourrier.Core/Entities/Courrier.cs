@@ -16,7 +16,7 @@ namespace GestionDeCourrier.Core.Entities
         private string _expediteurType;
 
         [ForeignKey("Utilisateur")]
-        public int CreateurId { get; set; }
+        public string CreateurId { get; set; }
 
         public string? Reference { get; set; }
         public string? Commentaire { get; set; }

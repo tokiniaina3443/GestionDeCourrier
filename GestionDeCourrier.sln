@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{983D6D42-E9E4-4DFD-903D-908BC1F7D56D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCourrier.Core", "GestionDeCourrier.Core\GestionDeCourrier.Core.csproj", "{DA0BEE95-3FF0-418F-B3DC-41CF2F298FF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeCourrier.Core", "GestionDeCourrier.Core\GestionDeCourrier.Core.csproj", "{DA0BEE95-3FF0-418F-B3DC-41CF2F298FF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCourrier.DAL", "GestionDeCourrier.DAL\GestionDeCourrier.DAL.csproj", "{BFEC4FA2-D181-43A5-9782-A3FD603D2CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeCourrier.DAL", "GestionDeCourrier.DAL\GestionDeCourrier.DAL.csproj", "{BFEC4FA2-D181-43A5-9782-A3FD603D2CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeCourrier.BLL", "GestionDeCourrier.BLL\GestionDeCourrier.BLL.csproj", "{C752DD17-2D80-4EC3-B5DB-1ADB63799EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionDeCourrier.BLL", "GestionDeCourrier.BLL\GestionDeCourrier.BLL.csproj", "{C752DD17-2D80-4EC3-B5DB-1ADB63799EEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
