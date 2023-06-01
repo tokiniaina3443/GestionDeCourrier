@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.login {
+    margin-top: 5%;
+    margin-left: 15%;
+}
